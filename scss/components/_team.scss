@@ -1,0 +1,102 @@
+.team {
+  background-color: $background-color_1;
+  padding: 94px 0;
+  margin: 0;
+  &__titel {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: normal;
+    margin-top: 30px;
+    color: $color_2;
+    margin-top: 30px;
+  }
+  &__item {
+    background: #ffffff;
+    padding-bottom: 30px;
+    text-align: center;
+    animation: fadeInLeft 4s;
+    border-radius: 10px;
+    width: 270px;
+    box-shadow: -5px 5px 5px -5px rgba(0, 0, 0, 0.5);
+    @media (min-width: 320px) {
+      width: 100%;
+    }
+    @media (min-width: 480px) {
+      width: 450px;
+    }
+    @media (min-width: 768px) {
+      width: 354px;
+    }
+    @media (min-width: 1200px) {
+      width: 270px;
+    }
+  
+    ul {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+ 
+  }
+  &__items {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .img {
+    object-fit: cover;
+    width: 100%;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 10px 0;
+    color: $color_3;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  &__titel-titel {
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 36px;
+    text-align: center;
+    color: $color_2;
+    margin: 0 0 50px 0;
+    @media (max-width: 320px) {
+      font-size: 20px;
+      letter-spacing: 0.84px;
+    }
+    @media (max-width: 768px) {
+      font-size: 28px;
+      letter-spacing: 0.84px;
+    }
+    @media (max-width: 1200px) {
+      font-size: 36px;
+      letter-spacing: 1.08px;
+    }
+  }
+  .sohcial {
+    a {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 44px;
+      height: 44px;
+      border-radius: 100%;
+      i{
+        font-size: 22px;
+        font-weight: 400;
+      }
+    }
+
+  }
+}

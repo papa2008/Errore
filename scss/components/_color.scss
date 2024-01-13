@@ -1,0 +1,14 @@
+@mixin web__titel ($color, $font, $size){
+ h2{
+    color:$black;
+    font{
+        font-family: Roboto;
+        font-style: normal;
+    font-weight: 700;
+    
+    
+ }
+ font-size: 36px;
+}  
+
+}

@@ -1,0 +1,19 @@
+@mixin desc ($color, $size){
+  color:$color;
+  text-align: center;
+  font-family: Roboto;
+  font-size: $size;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.48px;
+}
+@mixin title ($color, $size) {
+  color: $color;
+font-family: Roboto;
+font-size: $size;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
