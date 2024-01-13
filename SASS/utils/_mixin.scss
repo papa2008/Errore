@@ -1,0 +1,8 @@
+@mixin font($weight, $size, $height, $spacing){
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+// @include font(500, 14px, 1.14, 0.02em);

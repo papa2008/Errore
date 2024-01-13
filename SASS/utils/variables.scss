@@ -1,0 +1,28 @@
+$colors:(
+    'primary': #212121,
+    'hover': #2196F3,
+    'secondary': #FFF,
+    'third': #757575,
+    'fourth': #AFB1B8,
+    'fifth': #F5F4FA,
+    'sixth': #ffffff1a,
+    'seventh': #2196f3e6,
+    'background': #2F303ACC,
+    'footer': #2F303A,
+    'backdrop': #00000033,
+    'header-border': #bbbbbb,
+    'cards': #EEE,
+);
+
+@function getColor($key) {
+     @return map-get($colors, $key )
+}
+
+$fonts:(
+    'Roboto-font':#{'Roboto', sans-serif},
+    'Raleway-font':#{'Raleway', sans-serif},
+);
+
+@function getFonts($key) {
+    @return map-get($fonts, $key )
+}

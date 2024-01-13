@@ -1,0 +1,94 @@
+// @media(-webkit-min-device-pixel-ratio: 2),
+// (-o-min-device-pixel-ratio: 2/1),
+// (min-resolution: 2dppx),
+// (min-resolution: 192dpi),
+// (min-device-pixel-ratio: 2) {
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Image/tablet@2x.jpg);
+// }
+.electricity {
+    margin: 94px auto;
+
+    &__title{
+        text-align: center;
+        margin: 0px 0px 50px;
+        @include font(700, 36px, 1.16, normal);
+    }
+}
+
+.electricity-list {
+    display: flex;
+    margin: 0 auto;
+
+    &__item:nth-child(-n+2) {
+        margin-right: 30px;
+    }
+
+    &__thumb {
+        width: 370px;
+        height: 294px;
+        position: relative;
+        &--1{
+            @media(-webkit-min-device-pixel-ratio: 2),
+                (-o-min-device-pixel-ratio: 2/1),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi),
+                (min-device-pixel-ratio: 2) {
+                    background-image: url(../Image/img1@2x.jpg);
+                }
+        }
+        &--2{
+            @media(-webkit-min-device-pixel-ratio: 2),
+                (-o-min-device-pixel-ratio: 2/1),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi),
+                (min-device-pixel-ratio: 2) {
+                    background-image: url(../Image/img2@2x.jpg);
+                }
+        }
+        &--3{
+            @media(-webkit-min-device-pixel-ratio: 2),
+                (-o-min-device-pixel-ratio: 2/1),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi),
+                (min-device-pixel-ratio: 2) {
+                    background-image: url(../Image/img3@2x.jpg);
+                }
+        }
+    }
+
+    &__img {
+        object-position: 100%;
+    }
+
+    &__label {
+        position: absolute;
+        width: 370px;
+        height: 70px;
+        bottom: 0;
+        text-align: center;
+        padding-top: 27px;
+        background: rgba(47, 48, 58, 0.80);
+        color: getColor('secondary');
+        font-family: getFonts('Roboto-font');
+        @include font(700, 14px, normal, 0.42px);
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .electricity {
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .electricity{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .electricity{
+        display: none;
+    }
+}

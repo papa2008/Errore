@@ -1,0 +1,114 @@
+.features {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.features-list {
+    @extend %flex;
+    margin: 94px 0px 0px 0px;
+
+    &__item:nth-child(-n+3) {
+        margin: 0 30px 0 0;
+    }
+
+    &__subtitle{
+        font-family: getFonts('Roboto-font');
+        @include font(700, 14px, 1.14, 0.03em);
+        margin-bottom: 10px;
+    }
+
+    &__paragraf{
+        font-family: getFonts('Roboto-font');
+        @include font(400, 14px, 1.71, 0.03em);
+        color: getColor('third');
+        margin: 0px 30px 0px 0px;
+    }
+
+    &__cart{
+        width: 270px;
+        height: 120px;
+        background-color: getColor('fifth');
+        padding: 25px 0;
+        margin-bottom: 30px;
+    }
+
+    &__icon{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .features {
+        width: 1200px;
+    }
+
+    .features-list {
+        margin: 94px 15px 0px 15px;
+
+        &__item:nth-child(-n+3) {
+            margin: 0 30px 0 0;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .features{
+        width: 768px;
+    }
+    .features-list{
+        flex-wrap: wrap;
+        width: 768px;
+        margin: 94px 0 0;
+        justify-content: center;
+        
+        &__item:nth-child(-n+2) {
+            margin: 0 30px 30px 0;
+        }
+        &__item:nth-child(2) {
+            margin: 0 0 30px;
+        }
+        &__cart{
+            width: 354px;
+            height: 120px;
+        }
+        &__paragraf{
+            margin: 0;
+            width: 354px;
+            height: 48px;
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    .features{
+        width: 480px;
+
+    }
+    .features-list{
+        width: 480px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 94px 0 0 0;
+
+        &__item:nth-child(-n+3) {
+                margin: 0 0 0 0;
+            }
+        
+            &__cart {
+                width: 450px;
+                height: 120px;
+            }
+
+            &__subtitle{
+                text-align: center;
+            }
+        
+            &__paragraf {
+                margin: 0;
+                width: 450px;
+                height: 50px;
+            }
+    }
+}

@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+use {
+    display: block;
+}
+
+body {
+    font-family: getFonts('Roboto-font');
+}
+
+
+.contanier {
+    width: 1200px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (max-width: 480px) {
+        width: 480px;
+    }
+}

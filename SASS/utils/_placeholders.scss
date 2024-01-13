@@ -1,0 +1,13 @@
+%flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%background-img{
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+// @extend %flex;
